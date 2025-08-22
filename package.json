@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "git:push": "git add . && git commit -m \"add: add de npm \" && git push",
+    "git:push": "git add . && git commit -m \"refactor: organizacao de pasta \" && git push",
     "git:pull": "git pull"
   },
   "keywords": [],
