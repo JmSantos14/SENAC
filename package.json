@@ -1,0 +1,13 @@
+{
+  "name": "tabela",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "git:push": "git add . && git commit -m \"add: add de npm \" && git push",
+    "git:pull": "git pull"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
