@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    font-size: 1.02rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+.tabela{
+    background-color: #FAF6C8;
+    padding: 5px;
+    min-width: 550px;
+    max-width: 700px;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+.title{
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+thead{
+    background-color: #4D3D7A;
+    color: #fff;
+}
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+
+
+.tabela-corpo{
+
+}
+
+.first-column{
+    background-color: #4D3D7A;
+    color: #fff;
+}
+
+
+tfoot{
+    margin-top: 20px;
+    background-color: #A5A06E;
+    color: #fff;
+}
+
+.total-text{
+    text-align: left;
+    font-size: 1.15rem;
+}
+
+.total-price{
+    font-weight: bold;
+}
