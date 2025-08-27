@@ -20,14 +20,14 @@
         <nav>
             <ol>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#cursos">About</a></li>
+              <li><a href="#contato">Contact</a></li>
             </ol>
           </nav>
     </header>
 
     <main>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="imagem-sobre-area">
                 <img src="img/Prof.png" alt="Professor explicando a materia" class="imagem-sobre">
             </div>
@@ -36,13 +36,15 @@
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum unde corporis, id eveniet at illum autem maiores nihil et optio commodi dolorem neque, consequatur enim similique vel non aut quas.</p>
         </section>
 
-        <section class="course-list">
+        <section class="course-list" id="cursos">
             <h2 class="title">Cursos</h2>
 
             <div class="course-area">
                 <div class="course-block">
-                    <i class="fab fa-python"></i>
-                    <h3 class="course-title">Python</h3>
+                    <div class="title-area">
+                        <div class="destaque"><i class="fab fa-python"></i></div>
+                        <h3 class="course-title">Python</h3>
+                    </div>
                     <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, expedita illum enim hic optio adipisci vel a neque laudantium, quod suscipit error, officia tempora quis sequi nostrum nam tempore deleniti.</p>
 
                     <div class="prices-area">
@@ -54,34 +56,60 @@
                 </div>
 
                 <div class="course-block">
-                    <h3 class="course-title">Python</h3>
+                    <div class="title-area">
+                        <div class="destaque"><i class="fab fa-html5"></i></div>
+                        <h3 class="course-title">HTML</h3>
+                    </div>
                     <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, expedita illum enim hic optio adipisci vel a neque laudantium, quod suscipit error, officia tempora quis sequi nostrum nam tempore deleniti.</p>
 
                     <div class="prices-area">
-                        <p class="price old">R$109,90</p>
-                        <p class="price new">R$89,90</p>
+                        <p class="price old">R$159,90</p>
+                        <p class="price new">R$102,90</p>
                     </div>
 
                     <button class="comprar">Comprar</button>
                 </div>
 
                 <div class="course-block">
-                    <h3 class="course-title">Python</h3>
+                    <div class="title-area">
+                        <div class="destaque"><i class="fab fa-js"></i></div>
+                        <h3 class="course-title">JavaScript</h3>
+                    </div>
                     <p class="course-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, expedita illum enim hic optio adipisci vel a neque laudantium, quod suscipit error, officia tempora quis sequi nostrum nam tempore deleniti.</p>
 
                     <div class="prices-area">
-                        <p class="price old">R$109,90</p>
-                        <p class="price new">R$89,90</p>
+                        <p class="price old">R$110,90</p>
+                        <p class="price new">R$79,90</p>
                     </div>
 
                     <button class="comprar">Comprar</button>
                 </div>
+
+                
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <h2 class="title black-color">Contato</h2>
+
+            <p class="description black-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis aspernatur dicta quibusdam corporis unde reprehenderit possimus dolores porro, in voluptas voluptatum eligendi laborum temporibus iste laboriosam, pariatur nemo ad?</p>
+
+            <div class="buttons-area">
+                <button class="btn-contact whats">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>whatsapp</p>
+                </button>
+                
+                <button class="btn-contact insta">
+                    <i class="fab fa-instagram"></i>
+                    <p>instagram</p>
+                </button>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <h3>&copy;João Santos</h3>
     </footer>
 
 </body>

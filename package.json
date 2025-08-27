@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "git:push": "git add . && git commit -m \"add: inovaWEB \" && git push",
+    "git:push": "git add . && git commit -m \"refactor: ajuste final codigo \" && git push",
     "git:pull": "git pull"
   },
   "keywords": [],
