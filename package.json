@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "git:push": "git add . && git commit -m \"refactor: ajuste final codigo \" && git push",
+    "git:push": "git add . && git commit -m \"refactor: ajuste para versao mobile \" && git push",
     "git:pull": "git pull"
   },
   "keywords": [],
