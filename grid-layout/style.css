@@ -21,13 +21,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 20px;
-}
-
 /* Header */
 header {
     background: linear-gradient(135deg, var(--primary) 0%, #1a2530 100%);
@@ -95,6 +88,15 @@ nav a.active:after {
     width: 100%;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
+
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
@@ -138,6 +140,8 @@ nav a.active:after {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
+
 
 /* Welcome Section */
 .welcome {
@@ -206,7 +210,6 @@ nav a.active:after {
 
 
 
-
 /* Features */
 .features {
     padding: 80px 0;
@@ -250,6 +253,7 @@ nav a.active:after {
 }
 
 
+
 /* secao galeria */
 .gallery {
     padding: 80px 0;
@@ -281,6 +285,8 @@ nav a.active:after {
     display: block;
     transition: transform 0.5s ease;
 }
+
+
 
 /* Footer */
 footer {
