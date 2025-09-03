@@ -98,7 +98,7 @@ nav a.active:after {
 
 
 /* Hero Section */
-.hero {
+.welcome {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
     background-size: cover;
     background-position: center;
@@ -108,14 +108,14 @@ nav a.active:after {
     margin-top: 35px;
 }
 
-.hero h1 {
+.welcome h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-.hero p {
+.welcome p {
     font-size: 20px;
     max-width: 700px;
     margin: 0 auto 30px;
@@ -144,7 +144,7 @@ nav a.active:after {
 
 
 /* Welcome Section */
-.welcome {
+.about {
     padding: 40px 0;
     background-color: white;
 }
@@ -167,44 +167,44 @@ nav a.active:after {
     margin: 15px auto;
 }
 
-.welcome-content {
+.about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
 
-.welcome-text {
+.about-text {
     flex: 1;
 }
 
-.welcome-text h3 {
+.about-text h3 {
     font-size: 24px;
     margin-bottom: 20px;
     color: var(--primary);
 }
 
-.welcome-text p {
+.about-text p {
     margin-bottom: 20px;
     color: var(--text-light);
     line-height: 1.8;
 }
 
-.welcome-image {
+.about-image {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.welcome-image img {
+.about-image img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.5s ease;
 }
 
-.welcome-image:hover img {
+.about-image:hover img {
     transform: scale(1.05);
 }
 
@@ -216,7 +216,7 @@ nav a.active:after {
     background-color: var(--light);
 }
 
-.features-grid {
+.features-area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 15px;
@@ -260,7 +260,7 @@ nav a.active:after {
     background-color: var(--light);
 }
 
-.gallery-grid{
+.gallery-area{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 15px;
@@ -285,6 +285,52 @@ nav a.active:after {
     display: block;
     transition: transform 0.5s ease;
 }
+
+
+
+/* SECAO UNIDADES */
+section.units{
+    padding-bottom: 65px;
+}
+ .tabela-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.tabela-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr 1.5fr;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.tabela-linha {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr 1.5fr;
+    padding: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.2s;
+}
+
+.tabela-linha:hover {
+    background-color: #f1f8ff;
+}
+
+.tabela-linha:last-child {
+    border-bottom: none;
+}
+
+.celula {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
 
 
 

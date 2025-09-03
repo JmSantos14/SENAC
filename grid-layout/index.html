@@ -16,14 +16,15 @@
         <nav>
             <ul>
                 <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#">DASHBOARDS</a></li>
-                <li><a href="#">COLABORADORES</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#units">UNIDADES</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="welcome">
             <div class="container">
                 <h1>Bem-vindo à Obra Prima</h1>
                 <p>Sua plataforma completa para gerenciamento de projetos e colaboração em equipe</p>
@@ -31,27 +32,27 @@
             </div>
         </section>
     
-        <section class="welcome">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="section-title">Sobre Nós</h2>
-                <div class="welcome-content">
-                    <div class="welcome-text">
+                <div class="about-content">
+                    <div class="about-text">
                         <h3>Transformando ideias em realidade</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel quasi sint accusantium dolorem nam quidem ipsa aliquid non unde quos ab officia odit veritatis explicabo repellendus aspernatur, exercitationem aliquam?</p>
                         <p>Nossa missão é fornecer as ferramentas necessárias para que equipes criativas possam colaborar de forma eficiente, gerenciar projetos com excelência e entregar resultados excepcionais.</p>
                         <a href="#" class="btn">Saiba Mais</a>
                     </div>
-                    <div class="welcome-image">
+                    <div class="about-image">
                         <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Equipe colaborando">
                     </div>
                 </div>
             </div>
         </section>
     
-        <section class="features">
+        <section class="features" id="features">
             <div class="container">
                 <h2 class="section-title">Nossos Recursos</h2>
-                <div class="features-grid">
+                <div class="features-area">
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fas fa-chart-line"></i>
@@ -77,10 +78,10 @@
             </div>
         </section>
         
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h2 class="section-title">Galeria de Fotos</h2>
-                <div class="gallery-grid">
+                <div class="gallery-area">
                     <div class="gallery-item">
                         <img src="img/foto-frente-da-loja.png" alt="Equipe trabalhando">
                     </div>
@@ -96,6 +97,56 @@
                 </div>
             </div>
         </section>
+
+        <section class="units" id="units">
+            <div class="container">
+                <h2 class="section-title">Nossas Unidades</h2>
+                <div class="tabela-container">
+                    <div class="tabela-header">
+                        <div class="celula">Nome da Unidade</div>
+                        <div class="celula">Localização</div>
+                        <div class="celula">Funcionários</div>
+                        <div class="celula">Celular</div>
+                    </div>
+                
+                    <div class="tabela-linha">
+                        <div class="celula" data-label="Unidade">Matriz Central</div>
+                        <div class="celula" data-label="Localização">Rio de Janeiro - RJ</div>
+                        <div class="celula" data-label="Funcionários">125</div>
+                        <div class="celula" data-label="Celular">(11) 99999-9999</div>
+                    </div>
+                
+                    <div class="tabela-linha">
+                        <div class="celula" data-label="Unidade">Filial Norte</div>
+                        <div class="celula" data-label="Localização">Rio de Janeiro - RJ</div>
+                        <div class="celula" data-label="Funcionários">68</div>
+                        <div class="celula" data-label="Celular">(92) 98888-8888</div>
+                    </div>
+                
+                    <div class="tabela-linha">
+                        <div class="celula" data-label="Unidade">Filial Sul</div>
+                        <div class="celula" data-label="Localização">Porto Alegre - RS</div>
+                        <div class="celula" data-label="Funcionários">92</div>
+                        <div class="celula" data-label="Celular">(51) 97777-7777</div>
+                    </div>
+                
+                    <div class="tabela-linha">
+                        <div class="celula" data-label="Unidade">Filial Nordeste</div>
+                        <div class="celula" data-label="Localização">Salvador - BA</div>
+                        <div class="celula" data-label="Funcionários">78</div>
+                        <div class="celula" data-label="Celular">(71) 96666-6666</div>
+                    </div>
+                
+                    <div class="tabela-linha">
+                        <div class="celula" data-label="Unidade">Centro de Distribuição</div>
+                        <div class="celula" data-label="Localização">Anápolis - GO</div>
+                        <div class="celula" data-label="Funcionários">42</div>
+                        <div class="celula" data-label="Celular">(62) 95555-5555</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -109,14 +160,14 @@
                 <div class="footer-links">
                     <h4 class="footer-heading">Contato</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal, 1234</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. São João, 123</li>
                         <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
                         <li><i class="fas fa-envelope"></i> contato@obraprima.com</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Obra Prima. Todos os direitos reservados.</p>
+                <p>&copy; 2025 ObraPrima. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
