@@ -93,14 +93,19 @@ li:hover{
 .course-list{
     background-color: #2C3546;
     padding-block: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .course-area{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    gap: 2rem 1rem;
+    width: 90%;
     justify-content: center;
-    gap: 3.3rem;
+    justify-items: center;
 }
 
 .course-block{
@@ -140,7 +145,7 @@ li:hover{
 
 .fa-python, .fa-html5, .fa-js{
     color: #F0CA78;
-    transform: rotate(-30deg);
+    transform: rotate(-35deg);
     position: relative;
     top: -12px;
 }
@@ -320,5 +325,6 @@ footer > h3{
     .course-area{
         gap: 4rem;
     }
+ 
     
 }

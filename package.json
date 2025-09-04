@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "git:push": "git add . && git commit -m \"refactor: Ajuste na main com unidades de grid \" && git push",
+    "git:push": "git add . && git commit -m \"refactor: adicao de grid na secao cursos\" && git push",
     "git:pull": "git pull"
   },
   "keywords": [],
