@@ -1,0 +1,74 @@
+.buy-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 100%;
+    min-height: 25vh;
+    padding: 20px;
+}
+
+.modal-content{
+    background-color: #F0CA78;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    width: 100%;
+}
+
+.modal-title{
+    color: #2C3546;
+    padding: 10px;
+}
+
+.label-area{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 7px;
+    padding-inline: 10px;
+}
+
+.input-item{
+    border-radius: 10px;
+    border: none;
+    padding: 3px;
+}
+
+.footer-modal{
+    background-color: aliceblue;
+    margin-top: 10px;
+    padding: 5px;
+    padding-inline: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-radius: 0 0 15px 15px;
+}
+
+.btn-modal{
+    font-size: 13px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+.btn-modal.cancel{
+    background-color: aliceblue;
+    border: 1px red solid;
+    color: red;
+}
+
+.btn-modal.submit{
+    background-color: #2C3546;
+}

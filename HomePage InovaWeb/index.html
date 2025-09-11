@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>InovaWeb</title>
 </head>
 <body>
@@ -22,6 +23,12 @@
               <li><a href="#">Home</a></li>
               <li><a href="#cursos">About</a></li>
               <li><a href="#contato">Contact</a></li>
+              <select name="Menu" id="menu" class="dropdown-menu">
+                <option value="Menu" hidden>Menu</option>
+                <option value="saab">Área do Curso</option>
+                <option value="mercedes">Cursos</option>
+                <option value="audi">Contato</option>
+              </select>
             </ol>
           </nav>
     </header>
@@ -52,7 +59,7 @@
                         <p class="price new">R$89,90</p>
                     </div>
 
-                    <button class="comprar">Comprar</button>
+                    <button class="comprar" onclick="openModal()">Comprar</button>
                 </div>
 
                 <div class="course-block">
@@ -67,7 +74,7 @@
                         <p class="price new">R$102,90</p>
                     </div>
 
-                    <button class="comprar">Comprar</button>
+                    <button class="comprar" id="buy">Comprar</button>
                 </div>
 
                 <div class="course-block">
@@ -82,7 +89,7 @@
                         <p class="price new">R$79,90</p>
                     </div>
 
-                    <button class="comprar">Comprar</button>
+                    <button class="comprar" id="buy">Comprar</button>
                 </div>
 
                 
@@ -111,6 +118,34 @@
     <footer>
         <h3>&copy;João Santos</h3>
     </footer>
+
+    <div class="buy-modal">
+        <div class="modal-content">
+            <form action="" class="formulario">
+                <h3 class="modal-title">Inscrição</h3>
+
+                <div class="label-area">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="name" name="name" class="input-item">
+                </div>
+
+                <div class="label-area">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-item">
+                </div>
+
+                <div class="label-area">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" class="input-item">
+                </div>
+
+                <div class="footer-modal">
+                    <button id="cancelForm" class="btn-modal cancel">Cancelar</button>
+                    <button id="submitForm" class="btn-modal submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>

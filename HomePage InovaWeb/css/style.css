@@ -11,7 +11,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline: 20px;
+    padding-inline: 15px;
     padding-block: 0;
     width: 100%;
     height: 80px;
@@ -55,6 +55,15 @@ li:hover{
     border-bottom: 2px solid #fff;
     border-radius: 2px;
     transform: translateY(-1px);
+}
+
+.dropdown-menu{
+    background-color: #2C3546;
+    padding: 2px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
 }
 
 .sobre{
