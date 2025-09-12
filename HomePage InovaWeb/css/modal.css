@@ -82,3 +82,10 @@
 .btn-modal.submit{
     background-color: #2C3546;
 }
+
+
+@media screen and (min-width: 800px) {
+    .modal-content{
+        width: 30%;
+    }
+}
