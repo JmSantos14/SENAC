@@ -1,32 +1,40 @@
 .buy-modal{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: black;
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
     width: 100%;
-    min-height: 25vh;
+    height: 100%;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content{
     background-color: #F0CA78;
-    width: 90%;
+    width: 70%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .formulario{
     width: 100%;
+}
+
+.body-modal{
+    padding: 20px;
 }
 
 .modal-title{
     color: #2C3546;
     padding: 10px;
+    font-size: 1.5rem;
 }
 
 .label-area{
@@ -38,15 +46,16 @@
 }
 
 .input-item{
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
-    padding: 3px;
+    padding: 5px;
+    height: 2rem;
 }
 
 .footer-modal{
     background-color: aliceblue;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     padding-inline: 10px;
     width: 100%;
     display: flex;
@@ -61,6 +70,7 @@
     padding: 8px;
     border-radius: 8px;
     color: aliceblue;
+    cursor: pointer;
 }
 
 .btn-modal.cancel{

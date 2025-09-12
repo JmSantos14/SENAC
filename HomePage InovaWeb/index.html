@@ -74,7 +74,7 @@
                         <p class="price new">R$102,90</p>
                     </div>
 
-                    <button class="comprar" id="buy">Comprar</button>
+                    <button class="comprar" id="buy" onclick="openModal()">Comprar</button>
                 </div>
 
                 <div class="course-block">
@@ -89,7 +89,7 @@
                         <p class="price new">R$79,90</p>
                     </div>
 
-                    <button class="comprar" id="buy">Comprar</button>
+                    <button class="comprar" id="buy" onclick="openModal()">Comprar</button>
                 </div>
 
                 
@@ -119,33 +119,36 @@
         <h3>&copy;João Santos</h3>
     </footer>
 
-    <div class="buy-modal">
+    <div class="buy-modal" id="buyModal">
         <div class="modal-content">
-            <form action="" class="formulario">
-                <h3 class="modal-title">Inscrição</h3>
+            <form action="" class="formulario" id="formulario">
+                <div class="body-modal">
+                    <h3 class="modal-title">Inscrição</h3>
 
-                <div class="label-area">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="name" name="name" class="input-item">
-                </div>
+                    <div class="label-area">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="name" name="name" class="input-item" placeholder="Digite seu nome" value="">
+                    </div>
 
-                <div class="label-area">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="input-item">
-                </div>
+                    <div class="label-area">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="input-item" placeholder="Digite seu nome">
+                    </div>
 
-                <div class="label-area">
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" class="input-item">
+                    <div class="label-area">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" class="input-item" placeholder="Digite seu nome">
+                    </div>
                 </div>
 
                 <div class="footer-modal">
-                    <button id="cancelForm" class="btn-modal cancel">Cancelar</button>
-                    <button id="submitForm" class="btn-modal submit">Enviar</button>
+                    <button type="button" id="cancelForm" class="btn-modal cancel" onclick="closeModal()">Cancelar</button>
+                    <button id="submitForm" class="btn-modal submit" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
