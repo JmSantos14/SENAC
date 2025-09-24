@@ -230,7 +230,16 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title() }}</h1>
+      <h1>Hello, {{ pessoa.nome}}</h1>
+      <h2>{{titulo}}</h2>
+      <img [src]="imagem" alt="">
+
+      @if(pessoa.idade >= 18){
+        <p>Nome: {{pessoa.nome}}, maior de idade({{pessoa.idade}})</p>
+      }@else{
+        <p>Menor de idade</p>
+      }
+
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
