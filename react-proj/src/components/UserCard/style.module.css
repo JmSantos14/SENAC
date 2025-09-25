@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 33.3vh;
+}
+
+.task{
+    background-color: #313030;
+    border: bisque solid 3px;
+    border-radius: 2rem;
+    width: 27rem;
+    color: bisque;
+    padding: .7rem;
+
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.task p{
+    font-size: 1.05rem;
+}
+
+.task img{
+    width: 8rem;
+}
