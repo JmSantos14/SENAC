@@ -1,0 +1,16 @@
+<h2>Lista de Tarefas</h2>
+
+<!-- Input e botão -->
+<input [(ngModel)]="novaTarefa" placeholder="Digite uma tarefa">
+<button (click)="adicionarTarefa()">Adicionar</button>
+
+<!-- Mensagem quando o array está vazio -->
+<p *ngIf="tarefas.length === 0">Nenhuma tarefa cadastrada</p>
+
+<!-- Loop na array -->
+<ul>
+  <li *ngFor="let tarefa of tarefas; let i = index">
+    {{ tarefa }}
+    <button (click)="removerTarefa(i)">Remover</button>
+  </li>
+</ul>
