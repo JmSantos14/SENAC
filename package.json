@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "git:push": "git add . && git commit -m \"add: react-last-proj\" && git push",
+    "git:push": "git add . && git commit -m \"refactor: projeto feito\" && git push",
     "git:pull": "git pull"
   },
   "keywords": [],
