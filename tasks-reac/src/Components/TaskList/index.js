@@ -15,8 +15,13 @@ function TasksList({ tasks, onDeleteTask, onEditTask }) {
     setEditTitle('')
   }
 
-  const toggleLineThrough = (e) => {
-    e.target.nextSibling.classList.toggle('Checked', e.target.checked)
+  const handleCheck = (e) => {
+    const span = e.target.nextSibling
+    if (e.target.checked) {
+      span.classList.add('Checked')
+    } else {
+      span.classList.remove('Checked')
+    }
   }
 
   return (
@@ -32,19 +37,20 @@ function TasksList({ tasks, onDeleteTask, onEditTask }) {
             <li key={task.id} className="TaskItem">
               <span className="TaskTitle">{task.id}</span>
               <div className="TaskTop">
-                <input type="checkbox" onChange={toggleLineThrough} />
+                <input type="checkbox" onChange={handleCheck} />
                 {isEditing ? (
                   <input
                     type="text"
                     value={editTitle}
                     onChange={e => setEditTitle(e.target.value)}
                     onKeyDown={e => e.key === 'Enter' && saveEdit(task.id)}
+                    className="EditInput"
                   />
                 ) : (
                   <span className="TaskTitle">{task.title}</span>
                 )}
               </div>
-              
+
               <div className="Button-area">
                 <button className="Btn-erase" type="button" onClick={() => onDeleteTask(task.id)}>
                   Excluir

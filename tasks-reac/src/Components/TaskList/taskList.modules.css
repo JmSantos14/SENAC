@@ -34,7 +34,7 @@
 .TaskItem {
   background: #262626;
   border: 1px solid #4E4E4E;
-  padding: 8px;
+  padding: 10px;
   border-radius: 6px;
   margin-bottom: 8px;
   color: #fff;
@@ -49,6 +49,10 @@
 .Checked {
   text-decoration: line-through;
   color: #aaa;
+}
+
+.EditInput{
+  width: 80%;
 }
 
 .TaskTop {
