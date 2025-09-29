@@ -1,0 +1,74 @@
+.App {
+  background-color: #313030;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: #fff;
+  background-color: #3E3E3E;
+  border: 1px solid #4E4E4E;
+  box-shadow: rgba(0,0,0,0.4);
+  width: 25rem;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.Input-area{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  color: #E0E0E0;
+}
+
+input{
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #555555;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input::onFocus{
+  border: 1px solid #00ADB5;
+}
+
+.Button-area{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.Button-area button{
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  font-size: .85rem;
+
+  color: #ffffff;
+  font-weight: bold;
+  transition: ease all .2s;
+}
+
+.Button-area button:hover{
+  transform: translateY(-2px);
+}
+
+.Btn-clear{
+  background-color: #E84545;
+}
+
+.Btn-send{
+  background-color: #00ADB5;
+}
+

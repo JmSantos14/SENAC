@@ -4,6 +4,8 @@ import UserCard from './components/UserCard/usercard';
 import ProfImg from './img/Prof.png';
 
 function App() {
+
+
   return (
     <div className="App">
       <UserCard nome="Joao" cargo="Programador" imagem={ProfImg} desc="Conhecimento em várias linguagens"/>
